@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyadharshini-Portfolio</title>
+</head>
+<body>
+<style>
+
+* {
+box-sizing: border-box;
+font-family: Times New Roman;
+}
+
+header {
+background: #b4b4b4;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+.layout {
+display: flex;
+min-height: 100vh;
+}
+
+.sidebar {
+flex:3;
+background-color: #ff0747;
+color: white;
+padding: 30px;
+}
+
+.main {
+flex:7;
+padding: 40px;
+}
+
+.skills {
+background:hsla(0, 100%, 70%, 0.3);
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.projects{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:20px;
+}
+
+.project{
+background:hsla(0, 100%, 50%, 0.3);
+padding:15px;
+width:100%;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.5);
+}
+
+.certificate {
+column-count:2;
+column-gap:20px;
+}
+
+.cert-img {
+background: hsla(0, 100%, 50%, 0.3);
+padding:15px;
+margin-bottom:20px;
+border-radius:10px;
+border:1px solid #ddd;
+break-inside:avoid;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+p.border{
+border: 2px solid gray;
+border-radius: 12px;
+padding: 5px;
+}
+
+.button {
+background-color: #ff0747;
+font-size: 15px;
+padding: 12px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#profile {
+clip-path: circle(40%);
+width: 100%;
+max-width: 280px;
+height: auto;
+}
+
+.dark{
+background:black;
+color:white;
+}
+
+.light{
+background:white;
+color:black;
+}
+
+a{
+color:white;
+}
+
+@media (max-width: 768px) {
+.layout {
+flex-direction: column;
+}
+
+.sidebar, .main {
+width: 100%;
+padding: 20px;
+}
+
+#profile {
+width: 180px;
+height: 180px;
+}
+
+header h1 {
+font-size: 22px;
+}
+
+header h3 {
+font-size: 14px;
+}
+
+p {
+font-size: 14px;
+}
+
+.button {
+width: 100%;
+text-align: center;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+.sidebar {
+flex: 4;
+}
+
+.main {
+flex: 6;
+}
+
+#profile {
+width: 220px;
+height: 220px;
+}
+
+header h1 {
+font-size: 28px;
+}
+}
+
+</style>
+
+</body>
+
+<header>
+<h1 style="color:black">PRIYADHARSHINI SAKTHIVEL</h1>
+<h3 style="color:#616161"> Computer Science Student | Aspiring Developer </h3>
+<p> "Building practical solutions through code and creativity" </p>
+<button onclick="document.body.className='dark'">Dark</button>
+<button onclick="document.body.className='light'">Light</button>
+</header>
+
+<div class="layout">
+<div class="sidebar">
+
+<h3> PROFILE </h3>
+<img id="profile" src="profile.jpeg" alt="Profile">
+
+<h3> ABOUT ME </h3>
+<p> I’m a 2nd-year Computer Science student specializing in Information Technology, with a strong interest in building practical and user-friendly applications. I have foundational skills in HTML, CSS, and JavaScript, and I’m currently learning Java, C, and Python. I enjoy learning through projects, hackathons, and ideathons, and I’m eager to grow as a developer. </p>
+
+<h3>CONTACT</h3>
+<p> Email: priyasakthi7860@gmail.com</p>
+
+<p> Linkedin profile: </p>
+
+<p><a href="https://www.linkedin.com/in/priyadharshini-sakthivel-7b37ab34b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"> Priyadharshini-Linkedin </a></p>
+
+<p> Github profile: </p>
+<p><a href="https://github.com/Priyadharshini-46" target="_blank"> Priyadharshini-46</a></p>
+</div>
+
+<div class="main">
+<h2>SKILLS</h2>
+<p class="border"> Frontend: HTML, CSS, JavaScript </p>
+<p class="border"> Programming Languages: Java, C, Python </p>
+<p class="border"> Tools: GitHub, VS Code </p>
+<p class="border"> Concepts: OOP, Basics of DSA </p>
+
+
+<h2> PROJECTS </h2>
+<section>
+<div class="skills">
+<h3> HOSPITAL APPOINTMENT BOOKING SYSTEM</h3>
+<p> A Java-based desktop application built using Swing and MySQL that enables secure, role-based login for Admin, Doctor, and Patient users. It streamlines appointment management through an interactive GUI and database-driven authentication.</p>
+</div>
+
+<div class="skills">
+<h3> BOOTH ALGORITHM SIMULATOR </h3>
+<p> An interactive simulator that demonstrates Booth’s Algorithm for signed binary multiplication with step-by-step visualization.This project helped strengthen my understanding of binary arithmetic, 2’s complement representation, and computer architecture concepts.</p>
+</div>
+
+<div class="skills">
+<h3> SMART LOST AND FOUND MOBILE APP </h3>
+<p>  Developed a Smart Lost & Found mobile app that integrates location history tracking and AI-based image matching to help users recover lost items efficiently. The app combines personal movement timelines with a community-driven lost & found system, focusing on usability, privacy, and real-world problem solving.</p>
+</div>
+</section>
+
+<h2>EDUCATION</h2>
+<section>
+<div class="projects">
+<div class="project">
+<p> Studying B.Tech in Computer Science Engineering (Specialization: IT)</p>
+</div>
+<div class="project">
+<p> SRM University of Science and Technology-KTR </p>
+</div>
+<div class="project">
+<p> Year of study: (2024 – 2028) </p>
+</div>
+</div>
+</section>
+
+<h2> CERTIFICATES </h2>
+<section class="certificate">
+<div class="cert-img">
+<img src="hackathon.jpeg" width="500" height="300">
+</div>
+<div class="cert-img">
+<img src="ideathon.jpeg" width="500" height="300">
+</div>
+<div class="cert-img">
+<img src="workshop.jpeg" width="500" height="300">
+</div>
+<div class="cert-img">
+<img src="deloitte.jpeg" width="500" height="300">
+</div>
+<div class="cert-img">
+<img src="nptel.jpeg" width="500" height="300">
+</div>
+</section>
+
+<h2> RESUME SECTION </h2>
+<button class="button"><a href= "https://priyadharshini-resume.netlify.app" target="_blank"> Priyadharshini-Resume </a></p> 
+</div>
+</div>
+</html>
